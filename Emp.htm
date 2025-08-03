@@ -1,0 +1,125 @@
+<html>
+<head>
+  <title>Employee Information List</title>
+  <style>
+    body {
+      font-family:"Times New Roman", Times, serif;
+      background-color: #f4f6f8;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    .employee-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .employee-card {
+      background-color: #ccffff;
+      border-radius: 10px;
+      box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+      width: 300px;
+      padding: 20px;
+      box-sizing: border-box;
+      transition: transform 0.2s;
+    }
+
+    .employee-card:hover {
+      transform: scale(1.02);
+    }
+
+    .employee-card h2 {
+      margin-top: 0;
+      color: #4e76ab;
+    }
+
+    .employee-info p {
+      margin: 8px 0;
+      font-size: 14px;
+      color: #555;
+    }
+
+    .employee-info p span {
+      font-weight: bold;
+      color: #222;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Employee Directory</h1>
+
+  <div class="employee-container">
+
+    <!-- Employee 1 -->
+    <div class="employee-card">
+      <h2>Ashok R</h2>
+      <div class="employee-info">
+        <p><span>Employee ID:</span> EMP001</p>
+        <p><span>Role:</span> Software Engineer</p>
+        <p><span>Department:</span> IT</p>
+        <p><span>Email:</span> ashok.r@example.com</p>
+        <p><span>Phone:</span> +91 98765 43210</p>
+        <p><span>Address:</span> 123 MG Road, Chennai</p>
+        <p><span>Date of Joining:</span> 12-Jan-2021</p>
+        <p><span>Salary:</span> ₹10,00,000</p>
+      </div>
+    </div>
+
+    <!-- Employee 2 -->
+    <div class="employee-card">
+      <h2>Varun S</h2>
+      <div class="employee-info">
+        <p><span>Employee ID:</span> EMP002</p>
+        <p><span>Role:</span> Data Analyst</p>
+        <p><span>Department:</span> Business Intelligence</p>
+        <p><span>Email:</span> varun.s@example.com</p>
+        <p><span>Phone:</span> +91 99888 77665</p>
+        <p><span>Address:</span> Park Avenue, Hyderabad</p>
+        <p><span>Date of Joining:</span> 05-Mar-2022</p>
+        <p><span>Salary:</span> ₹18,50,000</p>
+      </div>
+    </div>
+
+    <!-- Employee 3 -->
+    <div class="employee-card">
+      <h2>Rahul S</h2>
+      <div class="employee-info">
+        <p><span>Employee ID:</span> EMP003</p>
+        <p><span>Role:</span> UI/UX Designer</p>
+        <p><span>Department:</span> Design</p>
+        <p><span>Email:</span> rahul.s@example.com</p>
+        <p><span>Phone:</span> +91 91234 56789</p>
+        <p><span>Address:</span> Sector 15, Kerala</p>
+        <p><span>Date of Joining:</span> 20-Jul-2020</p>
+        <p><span>Salary:</span> ₹9,00,000</p>
+      </div>
+    </div>
+
+    <!-- Employee 4 -->
+    <div class="employee-card">
+      <h2>Mervin A</h2>
+      <div class="employee-info">
+        <p><span>Employee ID:</span> EMP004</p>
+        <p><span>Role:</span> HR Manager</p>
+        <p><span>Department:</span> Human Resources</p>
+        <p><span>Email:</span> mervin.a@example.com</p>
+        <p><span>Phone:</span> +91 90000 12345</p>
+        <p><span>Address:</span> Satellite Road, Andhra</p>
+        <p><span>Date of Joining:</span> 10-Feb-2019</p>
+        <p><span>Salary:</span> ₹11,00,000</p>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,99 @@
+<html>
+<head>
+  <title>User Information</title>
+  <style>
+    body {
+      font-family:"Times New Roman", Times, serif;
+      background: #f4f7f8;
+      padding: 40px;
+    }
+
+    .form-container {
+      background: #ceede7;
+      padding: 25px;
+      max-width: 400px;
+      margin: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #333;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      color: #555;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    input[type="radio"],
+    input[type="checkbox"] {
+      margin-right: 5px;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 10px 15px;
+      background: #28a745;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 100%;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background: #72e88c;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h2>User Information</h2>
+    <form>
+      <label for="fullname">Full Name:</label>
+      <input type="text" id="fullname" name="fullname">
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email">
+
+      <label>Gender:</label>
+      <input type="radio" id="male" name="gender" value="male">
+      <label for="male" style="display:inline;">Male</label>
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="female" style="display:inline;">Female</label>
+
+      <label>Hobbies:</label>
+      <input type="checkbox" id="sports" name="hobbies" value="Sports">
+      <label for="sports" style="display:inline;">Sports</label>
+      <input type="checkbox" id="music" name="hobbies" value="Music">
+      <label for="music" style="display:inline;">Music</label>
+
+      <label for="country">Country:</label>
+      <select  id="country" name="country">
+		<option value="" disabled selected hidden>Please Choose...</option>
+        <option value="india">India</option>
+        <option value="usa">USA</option>
+        <option value="uk">UK</option>
+      </select>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Array Method </title>
+</head>
+<body>
+  <h2>Fruit List</h2>
+  <p id="original"></p>
+  <p id="added"></p>
+  <p id="removed"></p>
+  <p id="sorted"></p>
+  <p id="reversed"></p>
+  <p id="unshift"></p>
+
+  <script>
+  
+    let fruits = ["Apple", "Banana", "Mango"];
+    document.getElementById("original").innerHTML = "Original: " + fruits.join(", ");
+
+    
+    fruits.push("Orange");
+    document.getElementById("added").innerHTML = "After push: " + fruits.join(", ");
+
+    
+    let removed = fruits.pop();
+    document.getElementById("removed").innerHTML = "Removed (pop): " + removed;
+
+ 
+    fruits.sort();
+    document.getElementById("sorted").innerHTML = "Sorted: " + fruits.join(", ");
+
+    
+    fruits.reverse();
+    document.getElementById("reversed").innerHTML = "Reversed: " + fruits.join(", ");
+	
+	fruits.unshift("Pineapple");
+	document.getElementById("unshift").innerHTML = "unshift: " + fruits.join(", ");
+
+  </script>
+</body>
+</html>
